@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/story/Act1/scene_prologue.rpy", line 11: expected '=' not found.
+    image bg images/assets/cg/splash_bike_2.png
+                   ^
+
+File "game/story/Act1/scene_prologue.rpy", line 26: expected '=' not found.
+    image bg images/assets/cg/prologue_bike.png
+                   ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Thu Nov  2 18:03:22 2023
