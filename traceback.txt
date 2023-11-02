@@ -1,32 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 12, in script call
-    call scene_prologue
-  File "game/story/Act1/scene_prologue.rpy", line 14, in script
-    aditi frantic "Jun! Don’t go so fast! You’re going to get us both killed!"
-Exception: Say has image attributes ('frantic',), but there's no image tag associated with the speaking character.
+  File "game/script.rpy", line 17, in script call
+    call scene_1
+  File "game/story/Act1/scene_1.rpy", line 261, in script
+    # Broadcast bell rings
+Exception: Sayer 'Broadcast' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 12, in script call
-    call scene_prologue
-  File "game/story/Act1/scene_prologue.rpy", line 14, in script
-    aditi frantic "Jun! Don’t go so fast! You’re going to get us both killed!"
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\character.py", line 1290, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\character.py", line 1109, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\character.py", line 1035, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('frantic',), but there's no image tag associated with the speaking character.
+  File "game/script.rpy", line 17, in script call
+    call scene_1
+  File "game/story/Act1/scene_1.rpy", line 261, in script
+    # Broadcast bell rings
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Broadcast' is not defined.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.1.23060707
 Echoes Beyond The Gate 1.0
-Thu Nov  2 17:48:08 2023
+Fri Nov  3 03:03:43 2023

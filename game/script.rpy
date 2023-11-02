@@ -13,5 +13,8 @@ label start:
     # Start the prologue scene
     call scene_prologue
 
+    # Start the scene 1
+    call scene_1
+
     # This ends the game.
     return
