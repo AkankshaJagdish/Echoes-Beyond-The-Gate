@@ -31,7 +31,9 @@ label scene_1:
 
     image aditi stand_worried = "images/assets/character_sprites/aditi/scene_1_aditi_stand_worried.png"
 
-    scene bg scene_1_livingroom_dim_aditi_enters
+    scene bg living_room_aditi_enters
+
+    show jun jun_couch
 
     show aditi stand_worried
 
@@ -236,7 +238,7 @@ label scene_1:
     # Illusion of the beach sunset scene
     image bg beach_sunset = "images/assets/bg/scene_1_both_sit_bg_2.png" # Please replace with the actual path when you add the image.
 
-    scene beach_sunset
+    scene bg beach_sunset
     # play sound "assets/sound/waves_crashing.mp3" # Replace with the actual path to your sound.
 
     image jun embarrassed = "images/assets/character_sprites/jun/scene_1_jun_couch_embarrassed.png"
@@ -244,6 +246,8 @@ label scene_1:
     image jun sweatdrop = "images/assets/character_sprites/jun/scene_1_jun_couch_sweatdrop.png"
 
     image aditi calming = "images/assets/character_sprites/aditi/scene_1_aditi_sit_calming.png"
+
+    show aditi calming
 
     show jun couch_2
     jun "That vacation a year ago was amazing, wasn’t it? Mumbai has the greatest beaches -"
