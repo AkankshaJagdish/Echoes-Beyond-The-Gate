@@ -53,7 +53,9 @@ label scene_3_1:
 
     scene bg living_room_with_seal
 
-    show jun calm
+    image jun calm_2 = "images/assets/character_sprites/jun/scene_3_1/scene_3_1_jun_calm_2.png"
+
+    show jun calm_2
 
     image aditi seal_worried = "images/assets/character_sprites/aditi/scene_3_1/scene_3_1_aditi_worried.png"
 
@@ -76,7 +78,9 @@ label scene_3_1:
     show aditi seal_sad
     aditi "We’re so done for if it doesn’t work..."
 
-    show jun sweatdrop
+    image jun sweatdrop_2 = "images/assets/character_sprites/jun/scene_3_1/scene_3_1_jun_sweatdrop_2.png"
+
+    show jun sweatdrop_2
 
     # Jun's inner monologue
     "There she goes again."
@@ -101,7 +105,7 @@ label scene_3_1:
 
     hide image seal_sparks_1
 
-    show jun calm
+    show jun calm_2
 
     # Jun offers help
     jun "Here. Let me help."
@@ -123,8 +127,10 @@ label scene_3_1:
     show aditi seal_worried
     aditi "You really are the best, little brother."
 
+    image jun embarrassed_2 = "images/assets/character_sprites/jun/scene_3_1/scene_3_1_jun_embarrassed_2.png"
+
     # Jun coolly
-    show jun embarrassed
+    show jun embarrassed_2
     jun "Again with the ‘little’… Get started already."
 
     # Start the mini-game to open and close rifts
@@ -136,8 +142,10 @@ label scene_3_1:
     # play sound rifts_closing
     # play music encouraging_music
 
+    image jun surprised_2 = "images/assets/character_sprites/jun/scene_3_1/scene_3_1_jun_surprised.png"
+
     # Jun's approval
-    show jun surprised
+    show jun surprised_2
     jun "Well, that was pretty good!"
 
     image aditi seal_calming = "images/assets/character_sprites/aditi/scene_3_1/scene_3_1_aditi_calming.png"
