@@ -16,5 +16,8 @@ label start:
     # Start the scene 1
     call scene_1
 
+    # Start the scene 2
+    call scene_2
+
     # This ends the game.
     return

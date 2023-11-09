@@ -116,7 +116,7 @@ label scene_1:
     
     image aditi sit = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_sit.png"
 
-    image bg living_room_both_sit_1 = "images/assets/bg/scene_1_both_sit_bg_1.png" # Please replace with the actual path when you add the image.
+    image bg living_room_both_sit_1 = "images/assets/bg/scene_1_both_sit_bg_1.png" 
 
     scene bg living_room_both_sit_1
 
