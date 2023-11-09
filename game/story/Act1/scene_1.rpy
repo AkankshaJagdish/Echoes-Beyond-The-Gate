@@ -59,22 +59,25 @@ label scene_1:
     show jun coolly
 
     aditi "Jun! You - You little -"
+
     "It’s kind of fun annoying her like this."
 
     image jun calm = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_calm.png"
 
-    show jun calm
+    show jun jun_couch
 
     # Jun's inner thoughts continue
     "But really, talking to a boy? I know she’s in college now, but she’s so introverted that I worry about her. She might fall for an idiot."
     jun "What can we do? We have to stay quiet, of course. It feels like these gates have turned the world upside down overnight."
     
-    show aditi stand_worried
+    image aditi norm_2 = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_stand_norm_2.png"
+
+    show aditi norm_2
 
     aditi "And these monsters... they're like nightmares come to life."
     "Yeah. I worry about her. She might get scared of some fool and agree to be with him."
 
-    image jun sad = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_sad.png"
+    image jun sad = "images/assets/character_sprites/jun/scene_1/scene_1_jun_sad_2.png"
 
     show jun sad
 
@@ -90,6 +93,8 @@ label scene_1:
     "Honestly, I’m scared."
 
     scene bg jun_aditi
+
+    show jun sad
 
     image aditi annoyed = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_stand_annoyed.png"
 
@@ -109,7 +114,7 @@ label scene_1:
     "I trust Aditi’s judgment. She might not be the greatest at social interactions, but she does know her stuff. She’s like…book-smart. Top scorer and all that jazz."
     
     
-    image aditi sit = "images/assets/character_sprites/aditi/scene_1_aditi_sit.png"
+    image aditi sit = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_sit.png"
 
     image bg living_room_both_sit_1 = "images/assets/bg/scene_1_both_sit_bg_1.png" # Please replace with the actual path when you add the image.
 
@@ -146,9 +151,6 @@ label scene_1:
 
     show aditi sit_worried
 
-    aditi "A seal to close the Gates. I’ve been looking all over for it!"
-
-
     # Jun's reaction
     "I gulp. It’s always my fault when she gets like this."
 
@@ -159,6 +161,9 @@ label scene_1:
     show aditi sit_worried
     aditi "I kept it right here. What if someone took it? Or... what if it's lost forever?"
     jun "Why? What was on it?"
+
+    aditi "A seal to close the Gates. I’ve been looking all over for it!"
+
 
     # Music drops/gets darker
     # play music "assets/music/dark_music.mp3" # Replace with the actual path to your music.
@@ -267,7 +272,10 @@ label scene_1:
     # play sound "assets/sound/broadcast_bell.mp3" # Replace with the actual path to your sound.
     broadcast "Attention! A new gate has opened in the vicinity. Residents are advised to stay indoors."
 
-    show jun sad
+    image jun sad_couch = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_sad.png"
+
+    show jun sad_couch
+    show aditi stern
 
     "Oh no."
     "Oh no."
