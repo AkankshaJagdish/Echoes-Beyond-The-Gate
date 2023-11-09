@@ -143,7 +143,9 @@ label scene_2:
     menu:
         "Go out and close the Gate":
             jun "Okay. I trust you, sister. What do we need to do?"
-            # The game will branch here based on the choice.
+            call scene_3_1
+            # The game will continue in scene 3_1.
+
         "Stay put":
             jun "Maybe it's safer if we just stay here."
             # The game will branch here based on the choice.

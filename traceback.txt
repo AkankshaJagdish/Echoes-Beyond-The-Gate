@@ -3,30 +3,34 @@
 While running game code:
   File "game/script.rpy", line 20, in script call
     call scene_2
-  File "game/story/Act2/scene_2.rpy", line 26, in script
-    aditi determined "It’s here, huh?"
-Exception: Say has image attributes ('determined',), but there's no image tag associated with the speaking character.
+  File "game/story/Act2/scene_2.rpy", line 146, in script call
+    call scene_3_1
+  File "game/story/Act2/scene_3_1.rpy", line 97, in script
+    with Shake
+  File "game/story/Act2/scene_3_1.rpy", line 97, in <module>
+    with Shake
+NameError: name 'Shake' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 20, in script call
     call scene_2
-  File "game/story/Act2/scene_2.rpy", line 26, in script
-    aditi determined "It’s here, huh?"
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\character.py", line 1290, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\character.py", line 1109, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\character.py", line 1035, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('determined',), but there's no image tag associated with the speaking character.
+  File "game/story/Act2/scene_2.rpy", line 146, in script call
+    call scene_3_1
+  File "game/story/Act2/scene_3_1.rpy", line 97, in script
+    with Shake
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 1671, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/story/Act2/scene_3_1.rpy", line 97, in <module>
+    with Shake
+NameError: name 'Shake' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.1.23060707
 Echoes Beyond The Gate 1.0
-Thu Nov  9 19:15:27 2023
+Thu Nov  9 20:31:25 2023
