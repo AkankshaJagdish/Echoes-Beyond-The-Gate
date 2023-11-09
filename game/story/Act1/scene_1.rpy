@@ -15,7 +15,7 @@ label scene_1:
     
     # play music "assets/music/tense_bg_music.mp3" # Replace with the actual path to your music.
 
-    image jun jun_couch = "images/assets/character_sprites/jun/scene_1_jun_couch.png"
+    image jun jun_couch = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch.png"
 
     show jun jun_couch
     
@@ -29,7 +29,7 @@ label scene_1:
 
     image bg living_room_aditi_enters = "images/assets/bg/scene_1_livingroom_dim_aditi_enters.png" # Please replace with the actual path when you add the image.
 
-    image aditi stand_worried = "images/assets/character_sprites/aditi/scene_1_aditi_stand_worried.png"
+    image aditi stand_worried = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_stand_worried.png"
 
     scene bg living_room_aditi_enters
 
@@ -42,7 +42,7 @@ label scene_1:
 
     "My sister would definitely be in trouble without me."
 
-    image jun coolly = "images/assets/character_sprites/jun/scene_1_jun_couch_cool.png"
+    image jun coolly = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_cool.png"
     
     show jun coolly
 
@@ -52,7 +52,7 @@ label scene_1:
 
     scene bg jun_aditi
 
-    image aditi annoyed = "images/assets/character_sprites/aditi/scene_1_aditi_stand_annoyed.png"
+    image aditi annoyed = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_stand_annoyed.png"
 
     show aditi annoyed
 
@@ -61,7 +61,7 @@ label scene_1:
     aditi "Jun! You - You little -"
     "It’s kind of fun annoying her like this."
 
-    image jun calm = "images/assets/character_sprites/jun/scene_1_jun_couch_calm.png"
+    image jun calm = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_calm.png"
 
     show jun calm
 
@@ -74,7 +74,7 @@ label scene_1:
     aditi "And these monsters... they're like nightmares come to life."
     "Yeah. I worry about her. She might get scared of some fool and agree to be with him."
 
-    image jun sad = "images/assets/character_sprites/jun/scene_1_jun_couch_sad.png"
+    image jun sad = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_sad.png"
 
     show jun sad
 
@@ -91,7 +91,7 @@ label scene_1:
 
     scene bg jun_aditi
 
-    image aditi annoyed = "images/assets/character_sprites/aditi/scene_1_aditi_stand_annoyed.png"
+    image aditi annoyed = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_stand_annoyed.png"
 
     # Music fades to a melancholic tone
     # play music "assets/music/melancholic_music.mp3" # Replace with the actual path to your music.
@@ -101,7 +101,7 @@ label scene_1:
 
     aditi "No. Sister Akshara is out there somewhere. We just need to find her."
 
-    image jun couch_2 = "images/assets/character_sprites/jun/scene_1_jun_couch_2.png"
+    image jun couch_2 = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_2.png"
 
 
     # Jun's inner thoughts about trusting Aditi
@@ -133,7 +133,7 @@ label scene_1:
     "So, 1 person out of 10 has been killed, maimed, or otherwise afflicted by these monsters."
     "A comforting thought."
 
-    image aditi cool = "images/assets/character_sprites/aditi/scene_1_aditi_sit_cool.png"
+    image aditi cool = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_sit_cool.png"
 
     show aditi cool
 
@@ -142,7 +142,7 @@ label scene_1:
     jun "Jeez, don’t you have anything nicer to talk about?"
     aditi "I don’t think so. But I do have something important to ask."
 
-    image aditi sit_worried = "images/assets/character_sprites/aditi/scene_1_aditi_sit_worried.png"
+    image aditi sit_worried = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_sit_worried.png"
 
     show aditi sit_worried
 
@@ -163,7 +163,7 @@ label scene_1:
     # Music drops/gets darker
     # play music "assets/music/dark_music.mp3" # Replace with the actual path to your music.
 
-    image jun surprised = "images/assets/character_sprites/jun/scene_1_jun_couch_surprised.png"
+    image jun surprised = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_surprised.png"
     
     show jun surprised 
 
@@ -175,9 +175,9 @@ label scene_1:
     "I can’t. I can’t. I can’t."
     "Aditi will freak out if I do that."
 
-    image jun shocked = "images/assets/character_sprites/jun/scene_1_jun_couch_shocked.png"
+    image jun shocked = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_shocked.png"
 
-    image aditi stern = "images/assets/character_sprites/aditi/scene_1_aditi_sit_stern.png"
+    image aditi stern = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_sit_stern.png"
 
     show aditi sit
     # Aditi's explanation
@@ -203,7 +203,7 @@ label scene_1:
     show aditi sit
     aditi "Well…uhh…"
 
-    image aditi shiftingeyes = "images/assets/character_sprites/aditi/scene_1_aditi_sit_shiftingeyes.png"
+    image aditi shiftingeyes = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_sit_shiftingeyes.png"
 
     # Jun's reaction to Aditi's eccentricity
     show jun couch_2
@@ -215,18 +215,18 @@ label scene_1:
     jun "I don’t. That’s why I always tell you, I can’t help you if you don’t have a backup."
     "Sister always does things without a backup. And of course, every time it comes crashing down. I love the fact that she’s a genius. I don’t love that she’s eccentric about it."
 
-    image aditi frantic = "images/assets/character_sprites/aditi/scene_1_aditi_sit_frantic.png"
+    image aditi frantic = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_sit_frantic.png"
 
     # Jun and Aditi's discussion about the seal's importance
 
-    image jun worried = "images/assets/character_sprites/jun/scene_1_jun_couch_2.png"
+    image jun worried = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_2.png"
 
     show jun worried
     jun "What if a monster stole it? Those things are sentient. They said that on TV."
     show aditi frantic
     aditi "Oh no…"
 
-    image jun frantic = "images/assets/character_sprites/jun/scene_1_jun_couch_frantic.png"
+    image jun frantic = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_frantic.png"
 
     show jun frantic
 
@@ -241,11 +241,11 @@ label scene_1:
     scene bg beach_sunset
     # play sound "assets/sound/waves_crashing.mp3" # Replace with the actual path to your sound.
 
-    image jun embarrassed = "images/assets/character_sprites/jun/scene_1_jun_couch_embarrassed.png"
+    image jun embarrassed = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_embarrassed.png"
 
-    image jun sweatdrop = "images/assets/character_sprites/jun/scene_1_jun_couch_sweatdrop.png"
+    image jun sweatdrop = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_sweatdrop.png"
 
-    image aditi calming = "images/assets/character_sprites/aditi/scene_1_aditi_sit_calming.png"
+    image aditi calming = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_sit_calming.png"
 
     show aditi calming
 
