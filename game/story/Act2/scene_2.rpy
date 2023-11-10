@@ -36,6 +36,9 @@ label scene_2:
     # Aditi has a realization
     aditi "No. I just realized something."
     "Huh?"
+
+    stop music fadeout 1.0
+
     aditi "Exactly three weeks ago, Akshara called me. She seemed…like she was exhausted. I thought it was just those in-laws of hers. But now I think it might have been something else."
 
     # Jun's inner thoughts

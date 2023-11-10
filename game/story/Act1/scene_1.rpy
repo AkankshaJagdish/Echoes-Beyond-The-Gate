@@ -9,11 +9,11 @@ define broadcast = Character("Broadcast")
 label scene_1:
 
     # Setting the scene in the dimly lit living room
-    image bg living_room_only_jun = "images/assets/bg/scene_1_livingroom_dim_only_jun.png" # Please replace with the actual path when you add the image.
+    image bg living_room_only_jun = "images/assets/bg/scene_1_livingroom_dim_only_jun.png"
 
     scene bg living_room_only_jun
     
-    # play music "assets/music/tense_bg_music.mp3" # Replace with the actual path to your music.
+    play music "audio/If_You_Have_Free_Time.mp3" 
 
     image jun jun_couch = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch.png"
 
@@ -27,7 +27,7 @@ label scene_1:
     "My team members contacted me and told me to stay put. This entire city is on lock-down."
     "Wait. I should be glad I was on leave. Because…"
 
-    image bg living_room_aditi_enters = "images/assets/bg/scene_1_livingroom_dim_aditi_enters.png" # Please replace with the actual path when you add the image.
+    image bg living_room_aditi_enters = "images/assets/bg/scene_1_livingroom_dim_aditi_enters.png" 
 
     image aditi stand_worried = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_stand_worried.png"
 
@@ -81,6 +81,9 @@ label scene_1:
 
     show jun sad
 
+    # Music fades to a melancholic tone
+    play music "audio/傘も持たずに.mp3" 
+
     jun "Do you... think she's...?"
 
     image bg photo = "images/assets/cg/scene_1_three_siblings_photo.png"
@@ -98,8 +101,6 @@ label scene_1:
 
     image aditi annoyed = "images/assets/character_sprites/aditi/scene_1/scene_1_aditi_stand_annoyed.png"
 
-    # Music fades to a melancholic tone
-    # play music "assets/music/melancholic_music.mp3" # Replace with the actual path to your music.
     
     # Aditi's thoughts about Akshara
     show aditi annoyed
@@ -134,6 +135,8 @@ label scene_1:
     
     show aditi sit
 
+    play music "audio/If_You_Have_Free_Time.mp3" 
+
     aditi "But, you know, there’s a statistically low chance we will die. Only 10\% of the world has been affected right now…"
     "So, 1 person out of 10 has been killed, maimed, or otherwise afflicted by these monsters."
     "A comforting thought."
@@ -166,7 +169,7 @@ label scene_1:
 
 
     # Music drops/gets darker
-    # play music "assets/music/dark_music.mp3" # Replace with the actual path to your music.
+    play music "audio/闇の供物.mp3" 
 
     image jun surprised = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_surprised.png"
     
@@ -204,6 +207,8 @@ label scene_1:
     show jun couch_2
     jun "Sis. You’re smart. You can totally make the seal again, right? Right?"
     "Don’t tell me…"
+
+    play music "audio/If_You_Have_Free_Time.mp3" 
 
     show aditi sit
     aditi "Well…uhh…"
@@ -244,7 +249,8 @@ label scene_1:
     image bg beach_sunset = "images/assets/bg/scene_1_both_sit_bg_2.png" # Please replace with the actual path when you add the image.
 
     scene bg beach_sunset
-    # play sound "assets/sound/waves_crashing.mp3" # Replace with the actual path to your sound.
+    
+    play sound "audio/gentle-ocean-waves-birdsong-and-gull-7109.mp3" 
 
     image jun embarrassed = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_embarrassed.png"
 
@@ -268,9 +274,15 @@ label scene_1:
     show jun embarrassed
     jun "Sister!"
 
+    play audio "audio/old-church-bell-6298.mp3"
+
+    play music "audio/闇の供物.mp3" 
+
     # Broadcast bell rings
     # play sound "assets/sound/broadcast_bell.mp3" # Replace with the actual path to your sound.
     broadcast "Attention! A new gate has opened in the vicinity. Residents are advised to stay indoors."
+
+    stop audio fadeout 1.0
 
     image jun sad_couch = "images/assets/character_sprites/jun/scene_1/scene_1_jun_couch_sad.png"
 
