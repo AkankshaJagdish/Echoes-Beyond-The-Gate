@@ -136,7 +136,7 @@ label scene_3_1:
     # Start the mini-game to open and close rifts
     # Note: Actual mini-game code should be implemented here based on the game design.
     # This is a placeholder for the mini-game call.
-    # call mini_game_open_close_rifts
+    # call play_minigame
 
     # Sound effects and music
     # play sound rifts_closing

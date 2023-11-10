@@ -2,9 +2,25 @@
 errors listed below, and try again.
 
 
-File "game/story/Act1/scene_1.rpy", line 172: expected statement.
-    jun frantic = "images/assets/character_sprites/jun/scene_1_jun_couch_frantic.png"
-                ^
+File "game/story/Act2/mini_game_open_close_rifts.rpy", line 67: expected statement.
+    gate = random.choice(gates)
+         ^
+
+File "game/story/Act2/mini_game_open_close_rifts.rpy", line 68: expected statement.
+    sparks.append(Spark(gate.xpos, gate.ypos))
+                                              ^
+
+File "game/story/Act2/mini_game_open_close_rifts.rpy", line 69: expected statement.
+    gates.remove(gate)
+                      ^
+
+File "game/story/Act2/mini_game_open_close_rifts.rpy", line 71: expected statement.
+    spark_spawn_rate = max(0.1, spark_spawn_rate * 0.90)
+                     ^
+
+File "game/story/Act2/mini_game_open_close_rifts.rpy", line 72: expected statement.
+    renpy.restart_interaction()
+                               ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Nov  3 02:26:59 2023
+Thu Nov  9 23:23:35 2023

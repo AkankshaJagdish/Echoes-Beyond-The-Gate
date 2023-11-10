@@ -5,11 +5,17 @@ While running game code:
     call scene_2
   File "game/story/Act2/scene_2.rpy", line 146, in script call
     call scene_3_1
-  File "game/story/Act2/scene_3_1.rpy", line 97, in script
-    with Shake
-  File "game/story/Act2/scene_3_1.rpy", line 97, in <module>
-    with Shake
-NameError: name 'Shake' is not defined
+  File "game/story/Act2/scene_3_1.rpy", line 139, in script call
+    call play_minigame
+  File "game/story/Act2/mini_game_open_close_rifts.rpy", line 78, in script
+    call screen minigame_gates
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/common/00action_other.rpy", line 583, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/story/Act2/mini_game_open_close_rifts.rpy", line 43, in periodically_create_sparks
+    if current_time - spark_timer >= timedelta(seconds=spark_spawn_rate):
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'int'
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -18,19 +24,47 @@ Full traceback:
     call scene_2
   File "game/story/Act2/scene_2.rpy", line 146, in script call
     call scene_3_1
-  File "game/story/Act2/scene_3_1.rpy", line 97, in script
-    with Shake
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 1671, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/story/Act2/scene_3_1.rpy", line 97, in <module>
-    with Shake
-NameError: name 'Shake' is not defined
+  File "game/story/Act2/scene_3_1.rpy", line 139, in script call
+    call play_minigame
+  File "game/story/Act2/mini_game_open_close_rifts.rpy", line 78, in script
+    call screen minigame_gates
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\exports.py", line 3345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\core.py", line 4540, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\screen.py", line 770, in event
+    rv = self.child.event(ev, x, y, st)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\behavior.py", line 2574, in event
+    return run(self.function, *self.args, **self.kwargs)
+  File "C:\Users\akank\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\display\behavior.py", line 375, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_other.rpy", line 583, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/story/Act2/mini_game_open_close_rifts.rpy", line 43, in periodically_create_sparks
+    if current_time - spark_timer >= timedelta(seconds=spark_spawn_rate):
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'int'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.1.23060707
 Echoes Beyond The Gate 1.0
-Thu Nov  9 20:31:25 2023
+Thu Nov  9 23:53:20 2023
